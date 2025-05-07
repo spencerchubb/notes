@@ -1,0 +1,527 @@
+So it's kind of like a combined platform for education and gaming, where we're trying to build in this like sort of unified player character or avatar that exists in right now it's sort of like a 2d RPG style overworld interface, but could be anything
+extensively and the idea is to have this hub or like overworld hub where all of a student's
+progress is tracked in one place and through that hub they can access games and educational content
+that both feed back into the overworld hub and then also can be used from the hub in all of the
+other content areas so whether that's a game or or some other you know an educational game or a fun
+game or whatever it is that we're hosting in the overworld so i can even just really quickly share
+screen um and show like the idea behind it because we have a little mvp forming where it's like okay
+so we have our our website and from the website you can access this overworld and then in the
+overworld maybe you run around and you go and play your educational game and so from here you know
+you have your equationary in a game and you play it and then you get points or you get a score in
+this game and then you can go and play uh you know a 3d non-educational game that's just more fun um
+And so we have a lot of the infrastructure for this set up already.
+But this is all internal to this kind of like internal Play Academy overworld stuff.
+We don't have any connection yet to the like external partners or the like time back or whatever educational back end.
+So AJ just joined us last week with a lot of info on that.
+And so that's kind of like the next big step for us is to try to figure out what the best way to integrate with the actual educational software that already exists is going to be.
+And I think, you know, that's super relevant to maybe what you were just suggesting last night, Spencer.
+How many people are collaborating on Play Academy?
+Right now, there's like five or six of us.
+how many of us are there right now one two three four five six right now and then we have a meeting
+with nathan and juan today because i we kind of want to be able to have like external game dev
+as well where it's like we don't necessarily want everyone who's making a game to have to
+work with us we want to be able to have a platform that's kind of agnostic um whether that's taking
+the form of you know we integrate their games into our world or all we're doing is you know
+having an external link and then using an api like you're suggesting to connect uh rewards or
+currencies or whatever into our uh ecosystem because because i mean the original goal for our
+ecosystem was to use more education first like using incept and and that sort of educational
+curriculum generation to inform the actual educational content that we're serving but
+because that's such a long-term thing that's not going to be built out right away right now we're
+kind of pivoting more to the gamification game side but the idea was to have one one avatar or
+one uh kind of character that the student actually wants to progress through their their curriculum
+and incentivize it with games, rewards, and the avatar that actually levels up through all of that.
+Nice.
+Andre, did you have something?
+Yeah, I'm trying to understand.
+I'm trying to understand.
+So Playtademy is sort of a hub, or do you develop the games yourselves,
+or is it the idea that you're going to connect the educational side and once people get educational content done,
+they get some points and then you connect that to the games?
+Because it sounds like, for instance, we have games on DreamUp that can be accessed, right?
+And you could probably embed them and put it in.
+But what is the gist of it or what's the grand strategy?
+Yeah we want to be agnostic enough that we can do both on our team who want to make games they making games right now and so we can serve those internally and that fine but it like if if you
+know to get the most out of the ecosystem i think it would be great if external game devs were also
+able to integrate with us so like rather than having to build their games according to our
+infrastructure we just have you know an API or something easy that their rewards
+or whatever it is that you get through external games can be spent in our world
+as well so that so that that way developers don't really have to you know
+be forced into our ecosystem or infrastructure if they don't want to be
+but that we do offer both so you know we have people internal that can develop
+games as well one thing that i would maybe like recommend as a way of um thinking about this
+problem space to the group is that like every everything that we're doing whether it's a game
+or some other educational app is a like hypothesis and like a bet that we're like placing and like
+trying to like validate by getting it in front of kids and so ideally what you want to do is not
+if things are going well and there's momentum you want a couple things together so that some
+successes like pull up the others but if things are like not going well and some hypotheses are
+wrong you want to minimize coupling so that like incorrect assumptions um and like angles to a
+project don't pull down like other ones so it seems to me that ideally you want to be able to
+have like a bunch of educational games being made and separately from that there's like a hypothesis
+around using a in-game world as a place where there are rewards or as a in a game world that's
+a launcher for other apps just like study real launches the other educational apps today um so
+there's like kind of multiple different things being tested at once in like the play academy
+thing but like even for internal reasons we'd want to like decouple those um so that like if people
+love the games but like the world doesn't resonate or like vice versa um the like failure of one of
+those things wouldn't necessarily cause both to fail. So it seems like for their own internal
+reasons there's sort of reasons that Playcademy would need to build something like the service
+like being described here. It's just a matter of whether that like how it gets built and whether
+at its inception does it like live in like time back or not and like who does like the building
+and so on um but i think it seems like fairly clear that we do need like sort of like off like
+shared xp um and uh there's a third one anyway there's some some set of primitives that everyone
+who's making games and super builders could benefit from um and also everyone would benefit
+if the two-hour learning apps themselves which have like an xp concept could be used to like
+grind to unlock stuff in everyone's games.
+OK.
+OK.
+Aside from Play Academy, what other projects
+want gamification?
+So I'll go, yeah.
+So DreamUp, we are, I don't know,
+I feel like we have a different lane, sort of.
+But we're all overlapping each other on different aspects,
+right?
+And so we had imagined a marketplace
+of the games that get developed on our platform.
+It's kind of like game development without the development, right?
+It's like the easy mode for kids to make the games.
+And I could see kind of two models completely maybe testing at the same time.
+I don't know, but all the gamification we imagine having in
+could take a very DreamUp-specific direction.
+I don't know.
+or it could be very universal and extractable to both of the projects you just talked about.
+So an API that's common to all of us and or the way I see Playcademy is kind of like the OS for accessing educational games.
+And so it's something that we'll have to kind of experiment with and feel out.
+I don't have the answers to that. I'm just kind of like exploring the issue here.
+And AJ spoke to this somewhat, but I think in some ways we all want to kind of explore those things within our own project and what works best for us.
+And then where we find things like completely overlapping and basically doing the same thing, that's where we want to like partner and find these like sort of glue points to have everybody on the same page.
+Well said.
+I will say my immediate feedback is that there something really compelling in my head about like a potential end state where as a kid you can be doing stuff in a hub world with your friends like Club Penguin but also you can use AI to make a game that then ends up getting shipped as a place that can be accessed in this game world
+that you're like friends with. That's like fucking awesome.
+So if you think there's any there, I would be like so on board for like lots of collaboration along those lines.
+What other projects?
+That's very Roblox-like, which is obviously a proven concept for it.
+So it's like if the kids can generate their own games and access them within a shared world, that's like, yeah, immediately.
+There's a multi-billion dollar existing prototype of that, so it obviously works.
+Can we just quickly list all the projects that want this?
+So Playcademy, DreamUp, Roger, I assume, Ludwit?
+Yep, we've got a whole point system set up and users fight for, we get emissions through the Morpheus network, which is, you know, there's a crypto yield, which we then pay out based on people getting points.
+Is there anyone on this call that's working on the Robin Hood for kids?
+I'll take that as a no for now.
+I think that's Drew and Ali, we were talking to Joe about it at least.
+Yeah.
+Who else?
+I can chat with them.
+Am I missing any other projects?
+Feedback platform.
+I'll want to have the XP to, like, reward XP for students completing surveys or whatever.
+And maybe, like, have some customizations.
+David speaking.
+Sorry.
+It's not very clear.
+Sorry.
+the quote sorry yeah I want to have at least the shared XP factor in the
+feedback platform I'm building on maybe add some customization stuff as well for
+avatars or the app but at the very least I would just want to have the shared XP
+What is XP used for in your feedback platform?
+Right now it's just as a way to encourage
+kids to take the surveys. So
+you earn XP for taking your daily or weekly
+surveys for the class.
+Alright.
+Any other projects on this? Yeah, one thing that
+should be on the list of projects is in fact the existing two-hour learning apps
+yeah they have like an existing problem where there's so i don't know if everyone saw the
+architecture diagram that i put together with amenda but the um there's study real which is
+the new launcher for all the apps it launches like a bunch of different two-hour learning apps that
+are used uh about half of which seem to have xp systems that are all independent so there is like
+an existing appetite among all of the people on the marketing side and the operation side at Alpha
+for two things. One is unifying those XP systems. Two is they want those XP to be spendable for
+stuff and anything fun, whether it's a game or otherwise. So there's a huge appetite. I think
+the XP system is one way in which everyone here working on games but struggling with distribution
+can get immediate interest from all the people who are already promoting it to kids,
+whether that's in school, after school, or the homeschooling product.
+So I think QR learning XP is an important one.
+Okay.
+So I think that's all the projects.
+Feel free to chime in if we're still missing one.
+I want to start with Playcademy people.
+What features would you want to see in a central service?
+I think I don't have a huge amount of technical insight into that other than that we, you
+know, we will have like an existing internal experience system or whatever, but then whatever
+we link to external to us should hopefully be i mean i'm sort of just imagining like an api that
+that centralizes all of our like i would love for other people's like i don't want other people's
+reward systems or experience systems or whatever to have to mimic mine so like some kind of just
+like transformer that allows them to speak centrally is all i would really be looking for Could you tell me more about gamification features you have in Playcademy
+Adam, do you mind if I just play off what you just said?
+It is somewhat becoming a common thing with credit cards now where you can like transfer
+your credit card points to an airline and you get like 2x when you transfer or something
+like that.
+So I think that's how
+that's what I was
+imagining in all of this and that's a
+really exciting thing because then they have to kind of make a
+decision whether they want to continue using
+it in game or bring it to this central place
+where I don't know they buy clothes
+or get coupons or whatever it is
+or something like that. So I just wanted to
+jump that. Sure yeah
+that's a good analogy actually
+Yeah
+something like that
+where you have an exchange of currency
+currency would allow us to kind of have our you know our own flavor of these things and then we
+have a central kind of exchange of points or whatever or whatever yeah this is something that
+came up in the one conversation i had with caring about this before which is that what you don't want
+is one of these systems using these points to accidentally break the economics of the other
+systems like if there's a stupidly easy game or stupidly easy thing to find where they can just
+do a bunch of that and then like show up in some other game and have like an outsized uh reward for
+what they're able to do so like the thing that is centralizing xp also kind of implicitly doesn't
+become like an app store but does need kind of that uh you know you have to review like a submitted
+app to review when it joins like an app store like there probably will need to be exchange rates like
+on a per system basis and things that integrate with it and the central thing probably is the one
+that would end up needing to be responsible for making a determination of uh like what the
+exchange rate is when you're exchanging points into the system so that it can rebalance um
+yeah the incentives for the kids yeah so that actually that's an interesting complexity which
+like almost immediately establishes like a 4x necessity you have to have this entire 4x system
+which honestly could be pretty cool but yeah that would be uh that would be also pretty complex
+uh but okay as to your question spencer uh the the gamification there's sort of i would say like two
+streams that we're developing right now one of them is like just the primary exp like progression
+that basically allows them to have an avatar that plays through their education.
+And so that gamification is just your basic RPG-style level-up,
+get rewarded through either in-game skins, items, equipment,
+design elements for the overworld, whatever.
+But then also having a more explicit reward system.
+So we just have an alpha version of if you play an educational game,
+like we have this equation arena game and you're successful in it then you get a currency which you
+can then go into one of our other games like our 3d bamboo game that isn't educational and you can
+spend it on like getting a better sword or getting a better whatever like all internal to the actual
+and so that's sort of independent of the experience because it's more like a an explicit reward loop
+for like education to to non-educational so we kind of have both of those streams and i think
+either way the experience thing will happen internally just because it's part of our our
+setup but the rewards stream could easily link up i feel like uh conceptually at least
+to whatever we are doing externally
+nice
+yeah so my Wi-Fi is really weird I connected on my phone as well
+to keep it going.
+But yeah, that's, I think the analogy
+with credit card points is the best.
+You can also have the same things about it
+in terms of cryptocurrencies and foreign exchange.
+But I think unless we want to do this
+from a central perspective,
+it's going to be too much trouble.
+It's just easier to let people figure out their reward systems.
+And then when we're ready to integrate, we do like the Eurozone where you establish the optimal exchange rate and you fix that.
+And then as long as things don't change too much, you can keep it.
+Obviously, you run into all kinds of problems.
+go from economic problems but i don't think that's going to be super complicated um but for now my
+suggestion would be just like each um project keeps doing whatever they want and then we're
+ready to integrate to kind of figure out an exchange rate for these things andre could you
+remind me which project you're on dream up dream up okay could you tell me about what gamification
+features you want DreamUp to have?
+And Robert, you can also answer as well.
+We're going to discuss, I'm going to talk about this a little bit, for instance, with
+Leeway and C-Head and maybe his, and she posted on his path.
+And that's something we're also discussing as a team.
+I don't have a very strong view as of right now.
+So if Robert does, I'll let him speak for us.
+But yeah.
+yeah i agree that we haven't it hasn't been a focus just yet um other than some ideas to
+explore later but so you know we're open to apis and seeing what um because of that um i think that
+the on the sort of more like exp side of things um we were kind of looking to hook into in some way
+and it seems like this is related to the couple to like the you know the incept maybe within incept
+like the the the part that we want to be able to like track and hook into is the what they're
+calling the brain map now right it's like the students like basically exp in every subject
+right and where they are in their learning journey um and so that's i think the the like kind of the
+where where it is defined like um exactly where they are on each subject and what the appropriate
+questions to ask the next where that lives. And so I think that like we kind of have been trying
+to explore like as we gear it towards education, you know, how do we hook into those elements?
+Like how do we bring in the right questions for that for the subject that they choose when they
+and then like within the and then blend that with in our case like the world that they choose to
+or the game they choose to build on any concept. And so that's a big piece that I don't know,
+we've talked about a little bit, Adam talked about EXP and stuff and the way that they're
+handling it. That's I think a lot of those features of like a gamification are like again
+tightly coupled to that brain map concept. On the other side there's just like common elements of,
+I mean, if you just play any Roblox environment that's popular, there's just all these little,
+you know, there's kind of these tiers of rewards where you, there's a basic one, and then one above
+that that makes you earn the first one faster, and then one above that that just kind of stacks like
+that, and then you get more expensive rewards as you go. So, I mean, following a lot of what Roblox
+is doing on the reward system it is super addictive um it's like really bad for kids in a
+way but but uh if you gear them towards education we can kind of flip it um so i don't know i think
+those are the two sides of it like tying into the education platform through the brain map
+and kind of using that as because i put the same thing as exp and then just all the common
+game elements that's kind of where we intend to do it at a store i don't know if that's part of
+what you're imagining doing also, but we definitely,
+the economics of DreamUp, we want each node, each game,
+and each version of each game to be able to be monetized,
+and then even do kickbacks down the tree and stuff,
+but that's specific to us.
+So some kind of just easy store to tie into through API
+might be useful too.
+Awesome.
+If we can chime in again.
+Go for it.
+So if I understand, the way I understand gamification is you try to take boring things and
+rewards in gaming. So the student has to achieve certain marks in their study
+and then they get some types of rewards, XP, whatever. So DreamUp will definitely
+have two ways to go about this just thinking about increased positive
+problems
+for something along those lines as we have levels the first half of your sentence just cut off okay so there are two ways that DreamUp can fit into gamification right On the educational content as students pass on let say Fractional Invaders
+they get more and more accurate with their fraction simplification, they get XP.
+And then they can use those both internally for any games they want to play,
+or we could try one-activity platforms.
+So it really depends, I think, for us on which side of this, right?
+We can use both.
+But if I'm misunderstanding what gamification means or what you guys are thinking about it, please correct me.
+Yeah, I think that's a good summary.
+Go ahead.
+I would just add to that that gamification is also just about making whatever you're doing
+kind of a little bit more addictive and just like constantly like giving you little dopamine hits to
+keep you uh kind of flowing in the experience i thought that's what i said in the beginning but
+yeah okay i'm just rephrasing what you said then good summary roger could you talk about
+your gamification plans for ludwit um yeah so uh i've got kids going around to museums
+snapping photos and taking quizzes and earning points they uh get points for completing reviews
+of each philosophers on the network um and for submitting papers which are then graded in a
+peer-reviewed style um you know best uh highest peer-reviewed wins and then you know i can do
+points washing down and then I just added in a bunch of math stuff and civic stuff which I got
+to figure out some unification for um but uh yeah so I mean you know that's just assigning points to
+activities on the platform um the sort of bigger part on mine is we're connected into the Morpheus
+AI network which is a blockchain the Morpheus AI people have contributed a token to our subnet
+which means we get emissions and so we actually get free cash each month to distribute so part of
+our goal is to increase the amount of contributions to that from the morpheus network and beyonds but
+we can get more free money to distribute to all these groups it's me ryan harron and then i'm
+talking to george this afternoon uh to take over the math part and i might be bringing i was just
+setting up a meeting with
+Jack Ardley
+to try to steal one of his employees
+who's a kind of finance MBA guy.
+If I can get him,
+if I can get Joe to approve bringing him over,
+we'll give him some more firepower
+on that end.
+Oh.
+Also, Norman, quick question.
+Are you,
+what project are you on?
+I'm a solo dev.
+I'm working on games right now.
+Okay.
+I assume you're, are you interested in gamification?
+No.
+Yes.
+Okay.
+Have you thought about what gamification features you want?
+In terms of?
+I'm building games straight up, so.
+True, true.
+So in terms of like the assets that players can earn.
+Like a reward.
+How are you thinking about that?
+the assets that players can run.
+Yeah, points, experience, achievements.
+What kind of features are you building
+in terms of those things?
+I mean, to me, those things don't really matter.
+They're not valued because it's literally
+just a table in a database.
+Like, you're talking about collecting coins.
+That's literally a user ID and an associated integer.
+Like, OK.
+That's not what I'm concerned about.
+I'm concerned about having a game that people
+spend a lot of time on.
+Yeah.
+OK.
+That's what I'm trying to find out.
+Cool.
+Yeah.
+So yeah.
+It would potentially be useful then if your game
+and parts of your game could be XP gated
+by them grinding into our learning or whatever.
+Sure, I think that integration on that front
+would be helpful.
+Almost on down to just like bang out
+the integration like myself.
+All right All right Jesse I see a raised hand Ah yes I was going to comment after Rob mentioned his what is it the Roblox thing
+I haven't actually looked into Roblox at all, so I'm probably going to try and research how their economy works.
+works but um because we're trying to do something that's already been done before i think it'd be
+useful to kind of lift some ideas from roblox and also neopets that we mentioned in the chat
+a week ago because neopets had a nice idea which is they limit each game to three rewards per day
+that way you don't kids don't concentrate on one game one game might have a better payout but you
+you're still limited so you have to do different games and that kind of solves a little bit of the
+the balancing issue as well as um forcing kids to spread out and play multiple games instead
+of just play one gotcha yeah that could work the the the thing that's interesting and you
+could have special cases for different ones right because the thing that's interesting is that
+there's two sides of this there's like educational things where they get xp that they later spend
+to unlock like purely fun things one of the like quote-unquote educational games isn't a game at
+all it's literally just all the apps that currently exist like we want them to be able to use the like
+xp that they're earning and like the various like existing like not even game just like learning
+apps and then be able to like spend that xp um on games um and you probably don't want to cap
+the amount of cashable XP from that one in particular.
+That's a good point.
+Are we kind of thinking that we've got two different currencies,
+like experience is basically a currency as well?
+I think there is definitely like experience is a currency
+in the sense of like progression through,
+like if you actually want to say,
+okay like let's say we're taking educational content from insect and saying that it really
+does count towards their two-hour learning results somehow or really does count towards
+their time back progress or whatever uh like in that sense it's a currency but it's not necessarily
+going to be exchangeable for some like virtual reward currency that is uh secondary to that
+Can I jump in?
+Like, like, okay.
+So here's what would be useful to me.
+Figuring out the valuation for how much, like, each problem is, like, actually worth.
+And, like, monetary value.
+Like, how much is, like, solving, like, a core, how much is completing a course on IXL, like, worth to us?
+in terms of the economics
+of like, okay,
+if we know that
+solving, completing
+10 SAT courses
+gets you to a 1500
+on average,
+and we know that we can charge
+X dollars
+for a 1500 SAT
+score,
+I want analysis
+to back solve
+how much each problem is
+like worth to us that would be like what's what's interesting to me
+yeah yeah that'd be super valuable to them yeah good idea okay let's hit robert and then lp
+yeah so uh i really like that idea of backtracking or back solving the value of each like quantum of
+of uh education yeah we that we like help facilitate do price discovery like we're
+literally doing price discovery on like the worth of each problem absolutely yeah that makes a lot
+of sense um and then going back a step uh i think that those are good questions about xp versus
+like currency etc etc i see those as kind of do different things um i think it makes most sense
+for XP or EXP or whatever to be not, what's the word?
+I don't know, like you don't have to choose
+where to spend your XP.
+Like that's, you come to an app,
+whichever one you want with a certain amount of XP
+and you can sort of like spend that everywhere, right?
+Like it's just about you've achieved
+like some level of like mastery on this subject.
+You can buy like anything up to that sort of point
+in any environment you want.
+And then it does make sense, I think, also incentive-wise to have some currency that you have to choose where to spend it.
+But I think those are different things I think XP should be sort of parallel or in parallel you can just go spend it everywhere and catch up to your level of reward for that In whatever game or whatever game os or you know whatever the experience is um i think those are different things and also like there going to
+be multiple i mean if we're following anything like um roblox or these other gamification models
+that exist today that are successful there are you know several you know sometimes sometimes many
+tiers of currency that are kind of in play together and then i'll pass it to lpdo i think
+I agree with Robert. I did want to touch on the XP. I don't think we should be thinking about XP as a currency to spend, but more as a way to show mastery, to unlock games that students are like, we have a game that's second to fifth grade.
+they get enough xp where they've mastered those topics so they unlock the game that's
+sixth to eighth grade and so on and that currency and xp should be very like very separate as in
+like you have currency to spend on things while as you'll xp is more like a progression route that is
+already set it's not really something that they use it to spend on things and i also wanted to
+like ask like if you guys have any questions about roblox you can ask me i have a lot of
+experience like i know how it is the games aren't really like the only thing that connects the games
+on roblox is their single premium currency it's called robux uh any other kind of connection that
+would be like by the developer of those games within their own ecosystem roblox is like a
+like a website platform with a bunch of games hosted on it that are created by the players
+themselves i think for the exp stuff you can kind of structure it like a battle pass you don't
+have a direct currency but you get rewards or currency related rewards from it progression
+yeah we have a we have a battle pass system that that campbell's been building into play
+academy for us uh that's kind of the approach we're going to be taking yeah
+love it
+andre go ahead um i just want to say that from a rational economics standpoint
+XP is currency by definition. Whether you allow it to buy games or only to buy
+like to buy things in games only to buy more difficult games it's still currency
+like you're limiting stuff but it's it's a way to think about things it is
+currency it's just like you might have separate markets like oh I want this
+currency to only be used for these games and I want so XP can only be used to
+buy advanced games and says whatever we call it currency robots coins whatever
+they can be used to buy merchandise but it's all currency
+there is like two different concepts it's not that it's not currently it's
+that there's a concept of I think there's a meaningful difference between
+something that you earn that you spend in a way where it's depleted versus
+something that you earn where we're going with like XP dating we're not like
+it's not like you spend XP and you spend currency it's like you spend the
+currency which is depleted when you spend it but also there is a stop that
+measures how much learning you've done and you could get things based on how
+high that stat is which at that point doesn't function like a currency very
+similar um but one thing that i was thinking as this discussion was going on is that it sounds
+like different people have different goals or things in mind for gamification right so um
+oh what is the value backtracking from from sat scores or like oh we have tilly has all these apps
+and they're like in separate worlds and they we want to connect them and i think
+the the things that we would focus on will be different depending on which goals we're
+going to target first right so if the goal is to integrate to like the apps it's one problem
+i i'm not sure like what the goal would be for instance of backtracking from an sats like
+economics wise it's a super interesting question but like we're not going to charge students based
+going to expect the value they get from say getting some additional things at least that's not
+i think what we would like to do so but my contribution or my point is that
+we should probably establish what the goals are and perhaps perhaps in hierarchy as well
+yeah i think one thing that can be kind of abstracted to an api that would make sense
+is like having just like the concept of a currency
+and then like being able to like layer currencies
+like this currency, you know,
+has this effect on the other currencies you've created.
+Again, following some of the models that exist today that you can go and look at the examples,
+that might be useful.
+And not just from... we've been all thinking about this as a centralized gamification world that we all tap into,
+but I think actually just having the basic functions to call in your own code would be super helpful.
+I could just create a currency in my own sandbox, not touching anybody else,
+but just make those tools really easy to tap into via API.
+There's another goal.
+Yeah, just a set of endpoints.
+Would they allow us to connect?
+It would already be super useful, I think.
+Yeah, that's the base level goal,
+is that there's a lot of really cool projects
+being done here, and there's this separate thing
+where there's like XP systems in a few of the learning apps
+within alpha already,
+they're planning on unifying those XP systems
+in the Time Back platform.
+And so if we maximize the extent
+to which we can hook into that existing work we can like immediately get like kind of the existing verticals as a distribution platform for our apps So we have to do we kind of get to do less on customer development
+if we're hooking into their distribution channels.
+So that's the base level goal, is being able to hook into what they're already doing.
+So that we don't have, if we built our own shared XP service
+that was completely separate from what they're intending to do,
+that would be i think a big miss um because then we're like a reduplicating like effort but be like
+there is like more competition than collaboration at that point with like the existing people like
+distributing um alfalfa so oh okay is there um information on that somewhere for the existing
+systems because i i saw someone put it in the chat earlier earlier um yeah there isn't i'm like kind
+of like wrangling right now but the closest is that uh i made an architecture diagram with amanda
+um about all the existing systems and how they connect to each other one of the as of yet
+unimplemented boxes on the architecture diagram is like an xp thing that's going to loop in time back
+um that is representing the the conception of this that they already were aiming at before
+like any of the super builders or were hired so we basically want to hijack that as a way to like connect their stuff to all the games yeah i just i just posted it in the chat here uh it probably in the google chats and
+stuff somewhere else too but just for anyone who wants to look at it right now i posted it there
+and yeah i should have probably added at the beginning that that that was kind of like
+our initial like our exp system we're aiming to be essentially a one-to-one map onto like the
+time back progression, which was like, that was the original value proposition we were
+trying to build around essentially, and it's just expanded from there.
+All right.
+Thank you everyone for all the feedback.
+In terms of next steps, me and AJ are going to do something similar to this session with
+Trilogy people and with AE Studios people.
+And we're going to synthesize everything, we're going to put together a doc, somewhat
+like an RFC, a request for comment, and then do another round of feedback from everyone
+involved here, and then probably start building out the API.
+Very cool.
+At that point there will be a discussion about what the best way to get that built in terms of team and just so that everyone aware ahead of time the likely options there that I think will materialize when the plan is more concrete is like whether it makes sense to rely on a studio to build something that we spec because they already building the majority
+of the time back platform or if like the spec is basically exactly what dream up was going to do
+or exactly what play academy was going to do then maybe like one of our teams takes it and then the
+other option which I also kind of like is there's people who are not allocated
+to a project right now that are kind of looking for stuff to do if they get
+really excited about the prospect of like building the system that bridges
+the people working on games with the existing world like that's also a win so
+we'll figure out that after we have it spec'd out.
+All right.
+Thank you, everybody.
+Can we get some AI notes as well?
+I mean, I guess we didn't get it for this meeting,
+but it would be nice before the summary or the process.
+Yep.
+I'll do that.
+All right.
+Thank you, everybody.
+I look forward to sending that RFC in a few days.
+Have a good day.
+See you guys.
+Take care.
